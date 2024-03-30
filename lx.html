@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>网页背景变色小游戏</title>
+</head>
+<body>
+    <h1>按下按钮更改网页背景颜色！！</h1>
+    <button onclick="changeColor()">按我！</button>
+
+    <script>
+        function changeColor() {
+            var colors = ["red", "blue", "green", "yellow", "purple"];
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>
